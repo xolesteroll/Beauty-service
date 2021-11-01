@@ -50,6 +50,10 @@ ol {
   column-gap: 10px;
 }
 
+.header__menu-item .phone-link {
+  margin-left: 10px;
+}
+
 .main__inner {
   display: flex;
   align-items: stretch;
@@ -218,8 +222,106 @@ ol {
   text-align: center;
 }
 
+.prices__title {
+  background: #EDDF99;
+  min-height: 123px;
+  display: flex;
+  align-items: center;
+}
+
+.prices__inner {
+  padding: 50px 0;
+  position: relative;
+}
+
+.prices__inner::before,
+.prices__inner::after {
+  content: "";
+  position: absolute;
+  background: #96A975;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prices__inner::before {
+  height: 342px;
+  width: 3px;
+  left: -10%;
+}
+
+.prices__inner::after {
+  height: 294px;
+  width: 1px;
+  left: -8%;
+}
+
+.prices__list {
+  column-count: 3;
+}
+
+.prices__item {
+  position: relative;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices__item,
+.prices__item span {
+  font-size: 14px;
+line-height: 35px;
+letter-spacing: 0.15em;
+color: #090808;
+} 
+
+.prices__item::before{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  background-color: #96A975;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prices__item.inner-level-item::before {
+  top: 18px;
+}
+
+.footer{
+  background-image: url(../images/clean-beauty-2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  padding: 0 4% 3% 4%;
+}
+
+.footer__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 200px;
+}
+
+.footer__col{
+  min-height: 70px;
+  max-width: 25%;
+  text-align: center;
+}
+
+.footer__col-title {
+  margin-bottom: 15px;
+}
+
+
 .follow-list {
   display: inline-block;
+}
+
+.footer__menu-follow {
+  display: flex;
 }
 
 .follow-list li {
@@ -246,21 +348,28 @@ ol {
   background-image: url(../images/whatsapp-1.png);
 }
 
-.address-link {
+.icon-link {
   position: relative;
   padding-left: 15px;
 }
 
-.address-link::before {
+.icon-link::before {
   content: "";
   position: absolute;
   width: 10px;
   height: 15px;
-  background-image: url(../images/pin-1.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   left: 0;
+}
+
+.icon-link.address-link::before{
+  background-image: url(../images/pin-1.png);
+}
+
+.icon-link.phone-link::before{
+  background-image: url(../images/phone\ -1.png);
 }
 
 .green-line {
@@ -270,3 +379,33 @@ ol {
   width: 100%;
   margin: 0 auto;
 } 
+
+.butterfly-title {
+  font-size: 24px;
+  font-weight: 400;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+}
+
+.butterfly-title::before,
+.butterfly-title::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 17px;
+  top: 5px;
+  background-image: url(../images/vegan-2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.butterfly-title::before {
+  left: 0;
+}
+
+.butterfly-title::after  {
+  right: 0;
+}

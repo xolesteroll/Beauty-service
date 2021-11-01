@@ -1,0 +1,137 @@
+body {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 14px;
+  background-color: #fff2de;
+}
+
+.container {
+  max-width: 1230px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+.header {
+  padding: 30px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-logo a {
+  padding-bottom: 4%;
+}
+
+.header__menu {
+  width: 100%;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  column-gap: 100px;
+}
+
+.header__menu-list,
+.header ul {
+  justify-content: space-between;
+  display: flex;
+}
+
+.main__inner {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.main__inner > div {
+  max-width: 50%;
+  width: 100%;
+}
+
+.main__left {
+  padding: 10% 0;
+  position: relative;
+}
+
+.main__left-inner {
+  border-left: 3px solid #96a975;
+  padding-left: 30px;
+  margin: 0 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main__title-wrapper {
+  padding: 0 5%;
+  border-left: 1px solid #96a975;
+  min-height: 275px;
+}
+
+.main__title-box {
+}
+
+.main__title {
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: 7px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main__subtitle {
+  font-family: "Great Vibes";
+  font-size: 18px;
+  font-weight: 300;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 25px;
+  letter-spacing: 4px;
+}
+
+.main__description {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.main__action-box {
+  position: absolute;
+  width: 100%;
+  min-height: 105px;
+  background: rgba(102, 127, 74, 0.87);
+  bottom: 0;
+}
+
+.main__action-button {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__right {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main__contact-box {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  max-width: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -45,6 +45,11 @@ ol {
   display: flex;
 }
 
+.header__menu-follow__item {
+  display: flex;
+  column-gap: 10px;
+}
+
 .main__inner {
   display: flex;
   align-items: stretch;
@@ -113,11 +118,38 @@ ol {
 }
 
 .main__action-button {
-  height: 100%;
+  min-height: 105px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+}
+
+.main__action-button::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/eco-friendly-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 28%;
+}
+
+.main__action-button::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  background-image: url(../images/cnhtkrf.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 30%;
 }
 
 .main__right {
@@ -130,8 +162,53 @@ ol {
 .main__contact-box {
   text-align: center;
   position: absolute;
-  bottom: 0;
+  bottom: 25px;
   max-width: 40%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.follow-list {
+  display: inline-block;
+}
+
+.follow-list li {
+  margin: 0 5px;
+}
+
+.follow-link {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.follow-link.facebook {
+  background-image: url(../images/icons8-facebook-logo-30.png);
+}
+
+.follow-link.instagram {
+  background-image: url(../images/icons8-instagram-old-30.png);
+}
+
+.follow-link.whatsapp {
+  background-image: url(../images/whatsapp-1.png);
+}
+
+.address-link {
+  position: relative;
+  padding-left: 15px;
+}
+
+.address-link::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  background-image: url(../images/pin-1.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
 }

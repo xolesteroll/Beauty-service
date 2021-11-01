@@ -295,12 +295,12 @@ color: #090808;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 200px;
-  padding: 0 4% 3% 4%;
+  padding: 0 0 4%;
 }
 
 .footer__inner{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
   min-height: 200px;
 }
@@ -308,6 +308,7 @@ color: #090808;
 .footer__col{
   min-height: 70px;
   max-width: 25%;
+  width: 100%;
   text-align: center;
 }
 
@@ -322,6 +323,7 @@ color: #090808;
 
 .footer__menu-follow {
   display: flex;
+  justify-content: center;
 }
 
 .follow-list li {

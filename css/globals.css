@@ -18,6 +18,10 @@ body {
     padding: 0;
   }
 
+  a:hover {
+    transform: scale(1.1);
+  }
+
   .follow-list li {
     margin: 0 5px;
   }

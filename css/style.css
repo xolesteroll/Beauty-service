@@ -16,6 +16,10 @@
   padding-bottom: 4%;
 }
 
+.header-logo a img {
+  width: 100%;
+}
+
 .header__menu {
   width: 100%;
 }
@@ -331,6 +335,7 @@ color: #090808;
   }
   .header__inner {
     justify-content: space-between;
+    column-gap: 0;
   }
   .header__menu {
     width: auto;

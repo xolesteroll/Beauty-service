@@ -317,3 +317,22 @@ color: #090808;
   justify-content: center;
 }
 
+/* Media Queries */
+
+@media (max-width: 1025px) {
+  .header__menu-item:nth-child(1),
+  .header__menu-item:nth-child(2),
+  .header__menu-item>span {
+    display: none;
+  }
+  .header__menu-list {
+    justify-content: unset;
+    column-gap: 15px;
+  }
+  .header__inner {
+    justify-content: space-between;
+  }
+  .header__menu {
+    width: auto;
+  }
+}

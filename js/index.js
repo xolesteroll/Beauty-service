@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('click', () => {
 
     const headerOnScroll = () => {
         const header = document.querySelector('header.header')
@@ -17,3 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     headerOnScroll()
 })
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('click', () => {

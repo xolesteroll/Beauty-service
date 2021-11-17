@@ -243,6 +243,7 @@
   text-transform: capitalize;
   color: #f7ebd6;
   white-space: nowrap;
+  text-shadow: none;
 }
 
 .products__card {

@@ -273,12 +273,12 @@
 .products__card-image {
   border-radius: 50px 0px;
   overflow: hidden;
+  position: relative;
 }
 
 .products__card-image img {
   width: 100%;
   border-radius: 50px 0px;
-
 }
 
 .products__card-info {

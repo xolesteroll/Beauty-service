@@ -420,6 +420,23 @@
   .header__menu {
     width: auto;
   }
+  .products__card-inner {
+    flex-direction: column;
+  }
+
+  .products__card-inner > div {
+    max-width: 100%;
+    width: auto;
+  }
+  .products__title {
+    font-size: 50px;
+    margin-top: 0;
+  }
+
+  .products__title::before {
+    font-size: 115px;
+    bottom: -70px;
+  }
   .prices__list {
     column-count: 1;
   }
@@ -428,15 +445,6 @@
 @media (max-width: 768px) {
   .main__action-button {
     background: rgba(150, 169, 117, .6);
-  }
-
-  .products__card-inner {
-    flex-direction: column;
-  }
-
-  .products__card-inner > div {
-    max-width: 100%;
-    width: auto;
   }
 
   .footer__inner {
@@ -449,6 +457,14 @@
 
   .footer__col {
     max-width: 100%;
+  }
+  .products__title {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  .products__title::before {
+    font-size: 75px;
   }
 }
 

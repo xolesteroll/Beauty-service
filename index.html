@@ -7,16 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:wght@700&family=Roboto+Slab:wght@200;300;400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header-logo logo">
@@ -28,25 +30,22 @@
                     <ul class="header__menu-list">
                         <li class="header__menu-item">
                             <a href="#">
-                                Beauty Services & Prices
+                                products i work with
                             </a>
                         </li>
                         <li class="header__menu-item">
                             <a href="#">
-                                Contacts
+                                beauty services & prices
                             </a>
                         </li>
                         <li class="header__menu-item">
-                            <span>
-                                Make an appointment
-                            </span>
-                            <a href="tel:+31639377005" class="icon-link phone-link">
-                                +31639377005
+                            <a href="#">
+                                contacts
                             </a>
                         </li>
                         <li class="header__menu-item header__menu-follow__item">
                             <span>
-                                Follow me
+                                follow me
                             </span>
                             <ul class="header__menu-follow follow-list">
                                 <li>
@@ -72,35 +71,30 @@
         </div>
     </header>
 
-    <main class="main">
-        <div class="main__inner">
-            <div class="main__left">
-                <div class="main__left-inner">
-                    <div class="main__title-wrapper">
-                        <h1 class="main__title">
-                            CLEAN SKIN
-                        </h1>
-                        <h3 class="main__subtitle">
-                            Be good to your skin <br> You will whear it every day
-                        </h3>
-                        <p class="main__description">
-                            face and body care services
-                        </p>
+    <main class="main" id="main" style="background-image: url(./images/1574605934.png)">
+        <div class="container">
+            <div class="main__inner">
+                <div class="main__title-wrapper">
+                    <h1 class="main__title">
+                        CLEAN SKIN
+                    </h1>
+                    <p class="main__description">
+                        face and body care services
+                    </p>
+                    <h3 class="main__subtitle" style="background-image: url(./images/quote.png);">
+                        Be good to your skin <br> You will whear it every day
+                    </h3>
+                    <div href="#" class="main__action-button">
+                        <div>
+                            Make an appointment
+                        </div>
+                        <a href="tel:+31639377005" class="icon-link phone-link white">
+                            +31639377005
+                        </a>
                     </div>
+                </div>
 
-                </div>
-                <div class="main__action-box">
-                    <a href="#" class="main__action-button">
-                        Products I Work With
-                    </a>
-                </div>
-            </div>
-            <div class="main__right" style="background-image: url(./images/1574605934.png);">
-                <div class="main__contact-box">
-                    <a href="#" class="icon-link address-link">
-                        Utrecht Van Starkenborghhof 80, 3527 HB Zeist Slotlaan 235 3701 GE
-                    </a>
-                </div>
+
             </div>
         </div>
     </main>
@@ -113,10 +107,14 @@
                 </h2>
                 <div class="products__card">
                     <div class="products__card-inner">
+                        <div class="products__card-image">
+                            <img src="./images/onmacabim0 1.jpg" alt="neutrazen image">
+                        </div>
                         <div class="products__card-info">
                             <div class="product__card-text-wrapper">
                                 <p class="products__card-text">
-                                    The Israeli Company Judean Desert Herbs , a manufacturer of cosmetics ONmacabim , itself
+                                    The Israeli Company Judean Desert Herbs , a manufacturer of cosmetics ONmacabim ,
+                                    itself
                                     grows herbs in the Judean Desert from which plant extracts are made using patented
                                     tehnologies.
                                 </p>
@@ -124,9 +122,6 @@
                                     We work on Israeli Cosmeciutical products. NOT TESTED ON ANIMALS.
                                 </p>
                             </div>
-                        </div>
-                        <div class="products__card-image">
-                            <img src="./images/onmacabim0 1.jpg" alt="neutrazen image">
                         </div>
                     </div>
                 </div>
@@ -139,12 +134,15 @@
                         <div class="products__card-info">
                             <div class="product__card-text-wrapper">
                                 <p class="products__card-text">
-                                    Gigi Cosmetic Laboratories focuses on modernity the development of its products is based
+                                    Gigi Cosmetic Laboratories focuses on modernity the development of its products is
+                                    based
                                     on "High-Tech" advanced active cosmetology, based on natural ingredients and special
                                     technique, which offer effective and visible results.All Gigi Cosmetic Laboratories
-                                    products are bio-compatible (i.e. formulated with substances equivalent to the skin),
+                                    products are bio-compatible (i.e. formulated with substances equivalent to the
+                                    skin),
                                     tested under the most prestigious dermatological institutes in the world.Superior
-                                    production conditions, meticulous quality control and efficacy testing ensure superior
+                                    production conditions, meticulous quality control and efficacy testing ensure
+                                    superior
                                     products.
                                 </p>
                             </div>
@@ -179,7 +177,7 @@
 
                     <li class="prices__item">
                         <span class="prices__item-name">
-                            Fecial cleasing 
+                            Fecial cleasing
                         </span>
                         <span class="prices__item-price">
                             <b>49</b> €
@@ -278,7 +276,7 @@
 
                     <li class="prices__item">
                         <span class="prices__item-name">
-                            Manicure +  Gel lak
+                            Manicure + Gel lak
                         </span>
                         <span class="prices__item-price">
                             <b>65</b> €
@@ -295,42 +293,42 @@
                     </li>
 
                     <li class="prices__item inner-level-item">
-                        Body massages > 
+                        Body massages >
                         <span class="prices__item-name">
-                           <ul>
-                            <li class="prices__item">
-                                <span class="prices__item-name">
-                                    Anti-cellulite 
-                                </span>
-                                <span class="prices__item-price">
-                                    <b>65</b> €
-                                </span>
-                            </li>
-                            <li class="prices__item">
-                                <span class="prices__item-name">
-                                    Limpatic drainege 
-                                </span>
-                                <span class="prices__item-price">
-                                    <b>65</b> €
-                                </span>
-                            </li>
-                            <li class="prices__item">
-                                <span class="prices__item-name">
-                                    Relaxing
-                                </span>
-                                <span class="prices__item-price">
-                                    <b>65</b> €
-                                </span>
-                            </li>
-                            <li class="prices__item">
-                                <span class="prices__item-name">
-                                    Body wrap   
-                                </span>
-                                <span class="prices__item-price">
-                                    <b>65</b> €
-                                </span>
-                            </li>
-                           </ul>
+                            <ul>
+                                <li class="prices__item">
+                                    <span class="prices__item-name">
+                                        Anti-cellulite
+                                    </span>
+                                    <span class="prices__item-price">
+                                        <b>65</b> €
+                                    </span>
+                                </li>
+                                <li class="prices__item">
+                                    <span class="prices__item-name">
+                                        Limpatic drainege
+                                    </span>
+                                    <span class="prices__item-price">
+                                        <b>65</b> €
+                                    </span>
+                                </li>
+                                <li class="prices__item">
+                                    <span class="prices__item-name">
+                                        Relaxing
+                                    </span>
+                                    <span class="prices__item-price">
+                                        <b>65</b> €
+                                    </span>
+                                </li>
+                                <li class="prices__item">
+                                    <span class="prices__item-name">
+                                        Body wrap
+                                    </span>
+                                    <span class="prices__item-price">
+                                        <b>65</b> €
+                                    </span>
+                                </li>
+                            </ul>
                         </span>
                     </li>
 
@@ -351,7 +349,7 @@
         <div class="footer__inner">
             <div class="footer__col">
                 <div class="footer__col-title">
-                    Make an appointment
+                    make an appointment
                 </div>
                 <a href="tel:+31639377005" class="icon-link phone-link">
                     +31639377005
@@ -359,7 +357,7 @@
             </div>
             <div class="footer__col">
                 <div class="footer__col-title">
-                    Follow me
+                    follow me
                 </div>
                 <ul class="footer__menu-follow follow-list">
                     <li>
@@ -381,11 +379,16 @@
             </div>
             <div class="footer__col">
                 <div class="footer__col-title">
-                    adress
+                    my locations 
                 </div>
-                <a href="#" class="icon-link address-link">
-                    Utrecht Van Starkenborghhof 80, 3527 HB Zeist Slotlaan 235 3701 GE
-                </a>
+                <div class="footer__col-links">
+                    <a href="#" class="icon-link address-link">
+                        Utrecht Van Starkenborghhof 80, 3527 HB
+                    </a>
+                    <a href="#" class="icon-link address-link">
+                        Zeist Slotlaan 235 3701 GE
+                    </a>
+                </div>
             </div>
         </div>
     </footer>

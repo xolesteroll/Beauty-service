@@ -8,7 +8,8 @@
     <title>Beauty</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto+Slab:wght@200;300;400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -17,7 +18,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header-logo logo">
@@ -35,14 +36,6 @@
                         <li class="header__menu-item">
                             <a href="#">
                                 Contacts
-                            </a>
-                        </li>
-                        <li class="header__menu-item">
-                            <span>
-                                Make an appointment
-                            </span>
-                            <a href="tel:+31639377005" class="icon-link phone-link">
-                                +31639377005
                             </a>
                         </li>
                         <li class="header__menu-item header__menu-follow__item">
@@ -73,37 +66,33 @@
         </div>
     </header>
 
-    <main class="main">
-        <div class="main__inner">
-            <div class="main__left">
-                <div class="main__left-inner">
-                    <div class="main__title-wrapper">
-                        <h1 class="main__title">
-                            CLEAN SKIN
-                        </h1>
-                        <h3 class="main__subtitle">
-                            Be good to your skin <br> You will whear it every day
-                        </h3>
-                        <p class="main__description">
-                            face and body care services
-                        </p>
+    <main class="main" id="main" style="background-image: url(./images/1574605934.png)">
+        <div class="container">
+            <div class="main__inner">
+                <div class="main__title-wrapper">
+                    <h1 class="main__title">
+                        CLEAN SKIN
+                    </h1>
+                    <p class="main__description">
+                        face and body care services
+                    </p>
+                    <h3 class="main__subtitle" style="background-image: url(./images/quote.png);">
+                        Be good to your skin <br> You will whear it every day
+                    </h3>
+                    <div href="#" class="main__action-button">
+                        <div>
+                            Make an appointment
+                        </div>
+                        <a href="tel:+31639377005" class="icon-link phone-link white">
+                            +31639377005
+                        </a>
                     </div>
+                </div>
 
-                </div>
-                <div class="main__action-box">
-                    <a href="#" class="main__action-button">
-                        Products I Work With
-                    </a>
-                </div>
-            </div>
-            <div class="main__right" style="background-image: url(./images/1574605934.png);">
-                <div class="main__contact-box">
-                    <a href="#" class="icon-link address-link">
-                        Utrecht Van Starkenborghhof 80, 3527 HB Zeist Slotlaan 235 3701 GE
-                    </a>
-                </div>
+                
             </div>
         </div>
+
     </main>
 
     <section class="products">

@@ -1,15 +1,26 @@
-
 .header {
   padding: 30px 0;
-  position: fixed;
   width: 100%;
   z-index: 100;
   transition: background-color 0.3s;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 35%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
 }
 
 .header.scrolled {
   background-color: #fff2de;
   opacity: 0.9;
+  top: 0;
+  position: sticky;
 }
 
 .header-logo a {
@@ -28,6 +39,7 @@
   display: flex;
   align-items: center;
   column-gap: 100px;
+  position: relative;
 }
 
 .header__menu-list,
@@ -49,16 +61,19 @@
   margin-left: 10px;
 }
 
+.main {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100px 0;
+}
+
 .main__inner {
   display: flex;
   align-items: stretch;
-  min-height: 100vh;
+  min-height: 75vh;
   max-height: 100vh;
-}
-
-.main__inner > div {
-  max-width: 50%;
-  width: 100%;
+  padding: 50px 0;
 }
 
 .main__left {
@@ -76,8 +91,6 @@
 }
 
 .main__title-wrapper {
-  padding: 0 5% 0 20%;
-  border-left: 1px solid #96a975;
   min-height: 275px;
 }
 
@@ -85,49 +98,73 @@
 }
 
 .main__title {
-  font-size: 72px;
   font-weight: 300;
-  line-height: 1.15;
-  letter-spacing: 7px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 75px;
+  line-height: 99px;
+  letter-spacing: 0.19em;
+  color: #fff2de;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .main__subtitle {
-  font-family: "Great Vibes";
-  font-size: 18px;
-  font-weight: 300;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  line-height: 25px;
-  letter-spacing: 4px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 138.7%;
+  letter-spacing: 0.21em;
+  color: #fff2de;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  padding: 75px 0;
+  background-position: center left;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .main__description {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 25px;
+  line-height: 33px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  color: #fff2de;
 }
-
+/* 
 .main__action-box {
   position: absolute;
   width: 100%;
   min-height: 105px;
   background: rgba(102, 127, 74, 0.87);
   bottom: 0;
-}
+} */
 
 .main__action-button {
-  min-height: 105px;
-  width: 100%;
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
-  font-weight: 400;
-  position: relative;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+  color: #fff2de;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  background: rgba(150, 169, 117, 0.1);
+  border: 1px solid #fff2de;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  max-width: 270px;
+  width: 100%;
+  padding: 10px 15px;
 }
 
-.main__action-button::before {
+.main__action-button * {
+  font-size: 14px;
+}
+
+
+
+/* .main__action-button::before {
   content: "";
   position: absolute;
   width: 50px;
@@ -149,14 +186,14 @@
   background-repeat: no-repeat;
   background-size: contain;
   right: 30%;
-}
+} */
 
-.main__right {
+/* .main__right {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 .main__contact-box {
   text-align: center;
@@ -218,7 +255,7 @@
 }
 
 .prices__title {
-  background: #EDDF99;
+  background: #eddf99;
   min-height: 123px;
   display: flex;
   align-items: center;
@@ -233,7 +270,7 @@
 .prices__inner::after {
   content: "";
   position: absolute;
-  background: #96A975;
+  background: #96a975;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -264,17 +301,17 @@
 .prices__item,
 .prices__item span {
   font-size: 14px;
-line-height: 35px;
-letter-spacing: 0.15em;
-color: #090808;
-} 
+  line-height: 35px;
+  letter-spacing: 0.15em;
+  color: #090808;
+}
 
-.prices__item::before{
+.prices__item::before {
   content: "";
   position: absolute;
   width: 6px;
   height: 1px;
-  background-color: #96A975;
+  background-color: #96a975;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -284,7 +321,7 @@ color: #090808;
   top: 18px;
 }
 
-.footer{
+.footer {
   background-image: url(../images/clean-beauty-2.png);
   background-position: center;
   background-size: cover;
@@ -293,14 +330,14 @@ color: #090808;
   padding: 0 0 4%;
 }
 
-.footer__inner{
+.footer__inner {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
   min-height: 200px;
 }
 
-.footer__col{
+.footer__col {
   min-height: 70px;
   max-width: 25%;
   width: 100%;
@@ -310,7 +347,6 @@ color: #090808;
 .footer__col-title {
   margin-bottom: 15px;
 }
-
 
 .follow-list {
   display: inline-block;
@@ -326,7 +362,7 @@ color: #090808;
 @media (max-width: 1025px) {
   .header__menu-item:nth-child(1),
   .header__menu-item:nth-child(2),
-  .header__menu-item>span {
+  .header__menu-item > span {
     display: none;
   }
   .header__menu-list {

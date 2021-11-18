@@ -343,7 +343,7 @@
   height: 1px;
   background-color: #96a975;
   left: 0;
-  top: 50%;
+  top: 1.1rem;
   transform: translateY(-50%);
 }
 

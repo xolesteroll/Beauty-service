@@ -78,11 +78,12 @@
   border-radius: 100px 0;
   padding: 0 5%;
   margin: 0 auto;
+  /* max-width: 65%; */
   margin-bottom: 50px;
   transform-style: preserve-3d;
   position: relative;
   animation: main-banner-animation;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 .main::before {

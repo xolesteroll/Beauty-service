@@ -331,9 +331,10 @@
 .prices__item,
 .prices__item span {
   font-size: 14px;
+  font-weight: 500;
   line-height: 35px;
   letter-spacing: 0.15em;
-  color: #090808;
+  color: #000000;
 }
 
 .prices__item::before {

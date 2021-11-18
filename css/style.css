@@ -457,6 +457,12 @@
     max-width: 100%;
     width: auto;
   }
+
+  .products__card-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   .products__title {
     font-size: 50px;
     margin-top: 0;
@@ -534,6 +540,11 @@
 
   .prices__title {
     padding: 0 15px;
+  }
+
+  .products__card-text {
+    font-size: 12px;
+    line-height: 16px;
   }
 
   .butterfly-title {

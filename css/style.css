@@ -77,6 +77,22 @@
   background-repeat: no-repeat;
   border-radius: 100px 0;
   padding: 0 5%;
+  margin-bottom: 50px;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  min-height: 100px;
+  width: 100%;
+  bottom: -40px;
+  left: -50px;
+  transform: translateZ(-10px);
+  background: rgba(244, 226, 199, 0.7);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 100px 0px;
 }
 
 .main__inner {
@@ -446,7 +462,7 @@
 
 @media (max-width: 768px) {
   .main__action-button {
-    background: rgba(150, 169, 117, .6);
+    background: rgba(150, 169, 117, 0.6);
   }
 
   .footer__inner {
@@ -503,16 +519,17 @@
   .prices__title {
     padding: 0 15px;
   }
-  
+
   .butterfly-title {
     font-size: 20px;
   }
 
   .prices__inner {
     padding: 20px 0;
-  } 
+  }
 
-  .prices__item, .prices__item span {
+  .prices__item,
+  .prices__item span {
     font-size: 12px;
   }
 }

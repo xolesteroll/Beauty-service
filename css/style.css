@@ -137,7 +137,17 @@
   color: #fff2de;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   animation: main-banner-content-animation;
-  animation-duration: 4s;
+  animation-duration: 2s;
+}
+
+.main__description {
+  font-size: 25px;
+  line-height: 33px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #fff2de;
+  animation: main-banner-content-animation;
+  animation-duration: 2.5s;
 }
 
 .main__subtitle {
@@ -153,18 +163,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   animation: main-banner-content-animation;
-  animation-duration: 4.5s;
+  animation-duration: 3s;
 }
 
-.main__description {
-  font-size: 25px;
-  line-height: 33px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: #fff2de;
-  animation: main-banner-content-animation;
-  animation-duration: 5s;
-}
+
 /* 
 .main__action-box {
   position: absolute;
@@ -195,7 +197,7 @@
   width: 100%;
   padding: 10px 15px;
   animation: main-banner-content-animation;
-  animation-duration: 5.5s;
+  animation-duration: 3.5s;
 }
 
 .main__action-button * {

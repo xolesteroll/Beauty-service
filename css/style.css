@@ -82,20 +82,22 @@
   transform-style: preserve-3d;
   position: relative;
   animation: main-banner-animation;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 
 .main::before {
   content: "";
   position: absolute;
   min-height: 100px;
-  width: 100%;
+  width: 95%;
   bottom: -40px;
-  left: -50px;
+  left: 0;
   transform: translateZ(-10px);
   background: rgba(244, 226, 199, 0.7);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 100px 0px;
+  animation: banner-before-animation;
+  animation-duration: 1s;
 }
 
 .main__inner {

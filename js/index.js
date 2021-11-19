@@ -29,15 +29,6 @@ document.addEventListener('click', () => {
 
     alignMainBanner()
     headerOnScroll()
+
 })
 
-
-
-
-
-
-
-
-
-
-document.addEventListener('click', () => {
